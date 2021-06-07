@@ -18,7 +18,7 @@ body {
 }
 
 .register-form {
-    width: 500px;
+    width: 400px;
     padding: 2rem;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -39,10 +39,12 @@ body {
     height: 40px;
     line-height: 40px;
     padding: 0 1rem;
+    outline: none;
     transition: all 0.3s ease-out;
 }
 .input-row input:focus {
     border: 1px solid #00bfa6;
+    outline: none;
 }
 .input__note textarea {
     width: 100%;
@@ -58,6 +60,9 @@ body {
 .input-row {
     position: relative;
 }
+.input-row:last-child {
+    margin-bottom: 0;
+}
 .input-row.success input {
     border-color: #2ecc71;
 }
@@ -67,9 +72,10 @@ body {
 .input-row small {
     color: #e74c3c;
     position: absolute;
-    bottom: -22px;
+    bottom: -20px;
     left: 0;
     visibility: hidden;
+    font-size: 12px;
 }
 .input-row.error small {
     visibility: visible;
